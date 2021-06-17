@@ -1,0 +1,9 @@
+<div [routerLink]="['/list']" [queryParams]="{category: category.key}">
+    <div class="row justify-content-center">
+        <div class="col-xl-10 col-lg-11 col-md-10 col-12 genre-card">
+            <img src="assets/icons/{{category.icon}}" class="img-fluid genre-img">
+            <label class="genre-para">{{category.name}}</label>
+            <img src="assets/icons/Next.svg" class="img-fluid genre-next-btn">
+        </div>
+    </div>
+</div>

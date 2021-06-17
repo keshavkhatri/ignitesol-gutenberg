@@ -1,0 +1,48 @@
+label.title{
+    margin-left: 10px;
+}
+.category-title{
+    font-size: 30px;
+    font-family: m-sb;
+    color: #5E56E7;
+}
+.cat-block{
+    margin-top: 40px;
+}
+.search-box{
+    border-radius: 4px;
+    position: relative;
+    height: 40px;
+    background-color: #F0F0F6;
+    color: #A0A0A0;
+    margin-top: 20px
+}
+.search-box:focus, .search-box:active, .search-box:focus-within{
+    border: 1px solid #5E56E7
+}
+.search-btn{
+    height: 18px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+.input-search-box{
+    width: 92%;
+    position: relative;
+    left: 20px;
+    top: 7px;
+    border:none;
+    background:none;
+}
+.input-search-box:focus{
+    outline: none;
+}
+.cancel-btn{
+    position: absolute;
+    right: 12px;
+    top: 14px;
+}
+.books{
+    background:#F8F7FF;
+    margin-top:20px;
+}

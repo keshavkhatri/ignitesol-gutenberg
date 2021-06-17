@@ -1,0 +1,9 @@
+<div class="row justify-content-center" (click)="showBook(book)">
+    <div class="col-sm-10 col-11 book-card">
+        <img src="{{book?.formats['image/jpeg']}}" class="img-fluid book-img">
+        <p class="book-para">{{book?.title}}</p>
+        <p class="book-author"><span *ngFor="let author of book?.authors">
+            {{author?.name}}
+        </span></p>
+    </div>
+</div>

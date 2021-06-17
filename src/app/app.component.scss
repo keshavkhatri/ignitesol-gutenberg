@@ -1,0 +1,14 @@
+@font-face{
+    font-family:m-reg;
+    src: url(../assets/fonts/m-reg.ttf);
+}
+/* Mont Semi bold font*/
+@font-face{
+    font-family:m-sb;
+    src: url(../assets/fonts/m-sb.ttf);
+}
+
+body{
+   font-family:m-reg;
+   font-size :16px
+}

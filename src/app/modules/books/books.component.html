@@ -1,0 +1,15 @@
+<div class="container main">
+    <div class="row justify-content-center">
+            <div class="col-xl-9 first-block">
+                <h1 class="first-heading">Gutenberg Project</h1>
+                <p class="first-para">A social catalogging website that allows you to freely search its database of books, annotations and reviews.</p>
+            </div>
+        <div class="col-xl-10 col-11 second-block">
+            <div class="row">
+                <div class="col-md-6" *ngFor="let category of categories">
+                    <app-genre-card [category]="category"></app-genre-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="container" infiniteScroll [infiniteScrollDistance]="4" [infiniteScrollThrottle]="40" (scrolled)="onScroll()">
+    <div class="row justify-content-center cat-block">
+        <div class="col-xl-11 category-title">
+			<img src="assets/icons/Back.svg" [routerLink]="['..']" class="img-fluid genre-pre-btn">
+			<label class="title">{{category?.name}}</label>
+		</div>
+        <div class="col-xl-11">
+			<div class="search-box">
+				<img src="assets/icons/Search.svg" class="img-fluid search-btn">
+				<input type="text" name="search" placeholder="Search" class="input-search-box" [(ngModel)]="searchQuery" (ngModelChange)="onSearch($event)">
+				<img src="assets/icons/Cancel.svg" class="img-fluid cancel-btn" *ngIf="searchQuery && searchQuery.length" (click)="clearSearch()">
+			</div>
+		</div>
+    </div>
+    <div class="row justify-content-center books">
+        <div class="col-xl-11 mt-5">
+            <div class="row">
+                <app-loading *ngIf="isLoading()"></app-loading>
+                <div class="col-lg-2 col-md-3 col-4" *ngFor="let book of books">
+                    <app-book-card [book]="book"></app-book-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
